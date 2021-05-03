@@ -14,8 +14,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="45dp"
         android:layout_marginTop="45dp"
-        android:background="@drawable/ic_onboard_image"
-        android:clipToOutline="true" />
+        android:background="@drawable/ic_onboard_image" />
 
     <TextView
         android:id="@+id/onboard_title"

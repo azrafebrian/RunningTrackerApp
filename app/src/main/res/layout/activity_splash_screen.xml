@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreen"
-    android:background="@drawable/ic_splash">
+    android:background="@drawable/front_background">
 
     <ImageView
         android:id="@+id/splash_logo"
@@ -13,7 +13,7 @@
         android:layout_height="70dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_splash_logo"/>
+        android:src="@drawable/ic_running_app"/>
 
     <ImageView
         android:id="@+id/splash_text"

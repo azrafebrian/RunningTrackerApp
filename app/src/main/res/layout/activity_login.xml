@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/front_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/ic_running_app"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/nama_app"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="150dp"-->
+<!--        android:text="Running App"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textStyle="italic|bold"-->
+<!--        android:textSize="24dp"/>-->
+
+    <ImageView
+        android:id="@+id/splash_text"
+        android:layout_width="174dp"
+        android:layout_height="28dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_splash_text"
+        android:layout_marginTop="155dp" />
+
+    <LinearLayout
+        android:layout_width="296dp"
+        android:layout_height="222dp"
+        android:background="@drawable/login_shape"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/username_editText"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="nama pengguna" />
+
+        <EditText
+            android:id="@+id/password_editText"
+            android:layout_width="256dp"
+            android:layout_height="45dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edittext_shape"
+            android:hint="kata sandi"/>
+
+        <LinearLayout
+            android:layout_width="256dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp">
+            
+            <Button
+                android:id="@+id/button_daftar_screen"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="Daftar"/>
+
+            <Button
+                android:id="@+id/button_masuk"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/button_shape"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:text="Masuk"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="metode lain:"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="490dp"
+        android:textColor="@color/white"
+        />
+
+    <ImageButton
+        android:id="@+id/button_masuk_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_google_small"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="519dp"/>
+
+
+</RelativeLayout>
