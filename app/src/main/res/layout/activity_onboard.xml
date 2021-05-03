@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/onboard_image"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_below="@+id/onboard_title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_onboard_image"
+        android:clipToOutline="true" />
+
+    <TextView
+        android:id="@+id/onboard_title"
+        android:layout_width="300dp"
+        android:layout_height="42dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="82dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/onboard_text"
+        android:textAppearance="@style/onboard_style" />
+
+    <Button
+        android:id="@+id/onboard_button"
+        android:layout_width="136dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/onboard_image"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="137dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/onboard_button"
+        android:text="Mulai" />
+</RelativeLayout>

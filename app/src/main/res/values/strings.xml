@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">RunningTrackerApp</string>
+    <string name="onboard_text">Ketahui perkembangan aktivitas berlarimu dengan Running Tracker!</string>
 </resources>
