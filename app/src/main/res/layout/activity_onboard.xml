@@ -19,11 +19,11 @@
     <TextView
         android:id="@+id/onboard_title"
         android:layout_width="300dp"
-        android:layout_height="42dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="55dp"
-        android:layout_marginTop="82dp"
+        android:layout_marginTop="79dp"
         android:gravity="center_horizontal|top"
         android:text="@string/onboard_text"
         android:textAppearance="@style/onboard_style" />

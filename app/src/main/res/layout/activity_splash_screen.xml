@@ -23,7 +23,4 @@
         android:src="@drawable/ic_splash_text"
         android:layout_below="@id/splash_logo"
         android:layout_marginTop="5dp"/>
-
-
-
 </RelativeLayout>
