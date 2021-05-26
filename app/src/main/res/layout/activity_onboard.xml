@@ -37,5 +37,6 @@
         android:layout_marginLeft="137dp"
         android:layout_marginTop="45dp"
         android:background="@drawable/onboard_button"
-        android:text="Mulai" />
+        android:text="Mulai"
+        android:onClick="loginMenu"/>
 </RelativeLayout>

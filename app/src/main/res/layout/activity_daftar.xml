@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_background"
-    tools:context=".MainActivity">
+    tools:context=".DaftarActivity">
 
     <ImageView
         android:id="@+id/logo_app"
@@ -80,6 +80,7 @@
             android:layout_marginTop="30dp">
             
             <TextView
+                android:id="@+id/batal_daftar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18dp"
@@ -88,14 +89,15 @@
                 android:text="Batal"/>
 
             <Button
-                android:id="@+id/button_daftar_screen"
+                android:id="@+id/button_daftar"
                 android:layout_width="120dp"
                 android:layout_height="36dp"
                 android:layout_marginLeft="43dp"
                 android:background="@drawable/button_shape"
                 android:textColor="@color/white"
                 android:textSize="14dp"
-                android:text="Daftar"/>
+                android:text="Daftar"
+                android:onClick="daftarAplikasi"/>
 
 
 
