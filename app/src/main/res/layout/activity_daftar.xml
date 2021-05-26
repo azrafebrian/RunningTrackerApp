@@ -99,8 +99,6 @@
                 android:text="Daftar"
                 android:onClick="daftarAplikasi"/>
 
-
-
         </LinearLayout>
 
     </LinearLayout>
