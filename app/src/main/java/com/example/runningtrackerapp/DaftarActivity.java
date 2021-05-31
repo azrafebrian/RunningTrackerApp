@@ -52,7 +52,7 @@ public class DaftarActivity extends AppCompatActivity {
         String email = mEmail.getText().toString().trim();
         String username = mUsername.getText().toString().trim();
         String password = mPassword.getText().toString().trim();
-        String re_password = mPasswordUlang.getText().toString().trim();
+        String c_password = mPasswordUlang.getText().toString().trim();
 
         if (username.isEmpty()) {
             mUsername.setError("Username dibutuhkan");
@@ -74,7 +74,9 @@ public class DaftarActivity extends AppCompatActivity {
             mPassword.setError("Password dibutuhkan");
             mPassword.requestFocus();
             return;
-        } else if (password!=re_password) {
+        }
+
+        if (!password.equals(c_password)) {
             mPasswordUlang.setError("Password tidak sama");
             mPasswordUlang.requestFocus();
             return;
@@ -85,23 +87,25 @@ public class DaftarActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
-                            User user = new User(username, email);
-
-                            FirebaseDatabase.getInstance().getReference("Users")
-                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                @Override
-                                public void onComplete(@NonNull @NotNull Task<Void> task) {
-                                    if(task.isSuccessful()){
-                                        Toast.makeText(DaftarActivity.this, "Pendaftaran berhasil", Toast.LENGTH_LONG).show();
-                                        startActivity(new Intent(getApplicationContext(), LoginTestActivity.class));
-                                    } else {
-                                        Toast.makeText(DaftarActivity.this, "Pendaftaran gagal. Coba lagi", Toast.LENGTH_LONG).show();
-                                    }
-                                }
-                            });
+                            Toast.makeText(DaftarActivity.this, "Pendaftaran berhasil", Toast.LENGTH_LONG).show();
+                            startActivity(new Intent(getApplicationContext(), LoginTestActivity.class));
+//                            User user = new User(username, email);
+//
+//                            FirebaseDatabase.getInstance().getReference("Users")
+//                                    .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
+//                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+//                                @Override
+//                                public void onComplete(@NonNull @NotNull Task<Void> task) {
+//                                    if(task.isSuccessful()){
+//                                        Toast.makeText(DaftarActivity.this, "Pendaftaran berhasil", Toast.LENGTH_LONG).show();
+//                                        startActivity(new Intent(getApplicationContext(), LoginTestActivity.class));
+//                                    } else {
+//                                        Toast.makeText(DaftarActivity.this, "Pendaftaran gagal. Coba lagi", Toast.LENGTH_LONG).show();
+//                                    }
+//                                }
+//                            });
                         } else {
-                            Toast.makeText(DaftarActivity.this, "Pendaftaran gagal. Coba lagi", Toast.LENGTH_LONG).show();
+                            Toast.makeText(DaftarActivity.this, "Pendaftaran gagal.", Toast.LENGTH_LONG).show();
                         }
                     }
                 });
