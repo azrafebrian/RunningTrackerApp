@@ -7,6 +7,19 @@
     android:background="@drawable/ic_background"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="15dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"/>
+    </RelativeLayout>
+
     <TextView
         android:id="@+id/main_body"
         android:layout_width="match_parent"
