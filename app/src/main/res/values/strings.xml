@@ -10,4 +10,10 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="jarak">Jarak</string>
+    <string name="kalori">Kalori</string>
+    <string name="waktu">Waktu</string>
+    <string name="mulai_berlari">MULAI BERLARI</string>
+    <string name="artikel_kesehatan">Artikel Kesehatan</string>
+    <string name="pengaturan">Pengaturan</string>
 </resources>
