@@ -24,13 +24,61 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="96dp" />
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="276dp"
         android:background="@color/lima"
         android:orientation="horizontal">
-    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="Jarak"
+                android:textSize="13sp"
+                android:textColor="@color/tiga"
+                android:fontFamily="@font/roboto_medium"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="Kalori"
+                android:textSize="13sp"
+                android:textColor="@color/tiga"
+                android:fontFamily="@font/roboto_medium"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="Waktu"
+                android:textSize="13sp"
+                android:textColor="@color/tiga"
+                android:fontFamily="@font/roboto_medium"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
