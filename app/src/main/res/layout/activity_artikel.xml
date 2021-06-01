@@ -3,39 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
+    android:layout_height="match_parent"
     android:background="@drawable/ic_background"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:layout_marginTop="15dp">
-        <ImageButton
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_back"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="28dp"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/artikel_kesehatan"
-            android:layout_centerVertical="true"
-            android:textSize="20sp"
-            android:layout_marginLeft="76dp"
-            android:textColor="@color/white"
-            android:fontFamily="sans-serif"
-            android:textStyle="bold"/>
-    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="28dp"
+        android:background="@drawable/ic_back" />
 
     <TextView
-        android:id="@+id/main_body"
-        android:layout_width="match_parent"
-        android:layout_height="589dp"
-        android:layout_alignParentLeft="true"
+        android:id="@+id/title_artikel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/back"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/main_body" />
+        android:layout_centerVertical="true"
+        android:layout_margin="28dp"
+        android:fontFamily="sans-serif"
+        android:paddingLeft="20dp"
+        android:text="@string/artikel_kesehatan"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/main_body" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_artikel"
+        android:layout_marginTop="20dp"
+        tools:listitem="@layout/item_artikel">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
 </RelativeLayout>
