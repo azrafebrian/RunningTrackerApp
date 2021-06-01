@@ -16,13 +16,30 @@
         android:layout_marginTop="70dp"
         android:background="@drawable/main_body" />
 
-    <ImageButton
-        android:id="@+id/button_mulai"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/button_mulai"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="96dp" />
+        android:orientation="vertical"
+        android:layout_marginTop="96dp" >
+        <ImageButton
+            android:id="@+id/button_mulai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_mulai">
+        </ImageButton>
+        <TextView
+            android:id="@+id/mulai_berlari"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MULAI BERLARI"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-black"  />
+    </RelativeLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
