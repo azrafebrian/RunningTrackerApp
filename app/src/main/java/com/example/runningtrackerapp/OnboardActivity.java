@@ -19,7 +19,7 @@ public class OnboardActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
         if(mAuth.getCurrentUser() != null) {
-            startActivity(new Intent(getApplicationContext(), LoginTestActivity.class));
+            startActivity(new Intent(getApplicationContext(), MainMenuActivity.class));
             finish();
         }
 

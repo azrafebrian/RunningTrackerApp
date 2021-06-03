@@ -38,4 +38,13 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="70dp"
         android:background="@drawable/main_body" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="logout"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
 </RelativeLayout>
