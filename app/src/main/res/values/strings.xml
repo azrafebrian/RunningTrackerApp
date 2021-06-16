@@ -18,4 +18,5 @@
     <string name="pengaturan">Pengaturan</string>
     <string name="baca_artikel">Baca Artikel</string>
     <string name="hello_blank_fragment">Article</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

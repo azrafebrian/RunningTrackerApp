@@ -30,14 +30,20 @@
             android:textStyle="bold"/>
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/main_body"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="589dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/main_body" />
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/main_body" />
+
+    </RelativeLayout>
 
     <Button
         android:id="@+id/logout"
