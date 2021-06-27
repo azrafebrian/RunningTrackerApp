@@ -6,10 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".RecordJourney">
 
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MapsActivity" ></fragment>
+
+    <ImageView
+        android:id="@+id/main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/main_body" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="420dp">
 
         <com.example.runningtrackerapp.GifPlayer
             android:id="@+id/gif"
@@ -30,7 +49,7 @@
                 android:layout_marginRight="25dp"
                 android:text="0.00 KM/H"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/holo_green_dark"
+                android:textColor="@color/dua"
                 app:layout_constraintBaseline_toBaselineOf="@+id/textView9"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -42,7 +61,7 @@
                 android:layout_marginRight="25dp"
                 android:text="00:00:00"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/holo_green_dark"
+                android:textColor="@color/dua"
                 app:layout_constraintBaseline_toBaselineOf="@+id/duration"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -54,7 +73,7 @@
                 android:layout_marginRight="25dp"
                 android:text="0.00 KM"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/holo_green_dark"
+                android:textColor="@color/dua"
                 app:layout_constraintBaseline_toBaselineOf="@+id/distance"
                 app:layout_constraintEnd_toEndOf="parent" />
 
@@ -67,7 +86,7 @@
                 android:layout_marginTop="25dp"
                 android:text="Duration:"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/holo_green_dark"
+                android:textColor="@color/dua"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
@@ -80,7 +99,7 @@
                 android:layout_marginTop="25dp"
                 android:text="Average speed:"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/holo_green_dark"
+                android:textColor="@color/dua"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/distance" />
 
@@ -92,7 +111,7 @@
                 android:layout_marginTop="25dp"
                 android:text="Distance run:"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@android:color/holo_green_dark"
+                android:textColor="@color/dua"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,15 +142,6 @@
         </LinearLayout>
 
         <View style="@style/Divider"/>
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginRight="25dp"
-            android:text="Stopping this journey will automatically save it to your list of journeys" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
