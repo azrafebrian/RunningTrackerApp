@@ -106,7 +106,7 @@ public class RecordJourney extends AppCompatActivity {
         if(locationService != null && locationService.currentlyTracking()) {
             stopButton.setEnabled(true);
             playButton.setEnabled(false);
-            gif.play();
+//            gif.play();
         } else {
             stopButton.setEnabled(false);
             playButton.setEnabled(true);
@@ -119,9 +119,9 @@ public class RecordJourney extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_record_journey);
 
-        gif = findViewById(R.id.gif);
-        gif.setGifImageResource(R.drawable.runninggif);
-        gif.pause();
+//        gif = findViewById(R.idThe.gif);
+//        gif.setGifImageResource(R.drawable.runninggif);
+//        gif.pause();
 
         distanceText = findViewById(R.id.distanceText);
         durationText = findViewById(R.id.durationText);
@@ -153,7 +153,7 @@ public class RecordJourney extends AppCompatActivity {
     }
 
     public void onClickPlay(View view) {
-        gif.play();
+//        gif.play();
         // start the timer and tracking GPS locations
         locationService.playJourney();
         playButton.setEnabled(false);
@@ -168,7 +168,7 @@ public class RecordJourney extends AppCompatActivity {
         playButton.setEnabled(false);
         stopButton.setEnabled(false);
 
-        gif.pause();
+//        gif.pause();
 
         DialogFragment modal = FinishedTrackingDialogue.newInstance(String.format("%.2f KM", distance));
         modal.show(getSupportFragmentManager(), "Finished");

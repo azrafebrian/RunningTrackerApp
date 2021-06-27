@@ -12,7 +12,6 @@ import androidx.fragment.app.Fragment;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class FragmentPengaturan extends Fragment {
-    private Button button;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,7 +24,7 @@ public class FragmentPengaturan extends Fragment {
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        button = view.findViewById(R.id.logout);
+        Button button = view.findViewById(R.id.logout);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

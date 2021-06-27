@@ -17,6 +17,8 @@
     <string name="artikel_kesehatan">Artikel Kesehatan</string>
     <string name="pengaturan">Pengaturan</string>
     <string name="baca_artikel">Baca Artikel</string>
-    <string name="hello_blank_fragment">Article</string>
+    <string name="hello_blank_fragment">Artikel</string>
     <string name="title_activity_maps">Map</string>
+    <string name="mulai_sejarah">SEJARAH</string>
+    <string name="mulai_statistik">STATISTIK</string>
 </resources>

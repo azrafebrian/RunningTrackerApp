@@ -17,4 +17,8 @@
     <string name="artikel_kesehatan">Health Articles</string>
     <string name="pengaturan">Settings</string>
     <string name="baca_artikel">Read Article</string>
+    <string name="hello_blank_fragment">Article</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="mulai_sejarah">HISTORY</string>
+    <string name="mulai_statistik">STATISTICS</string>
 </resources>

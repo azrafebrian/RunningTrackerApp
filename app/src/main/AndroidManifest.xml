@@ -31,6 +31,32 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter >
+                <action android:name="android.intent.action.BATTERY_LOW" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".StatisticsActivity" />
+        <activity android:name=".EditJourney" />
+        <activity android:name=".ViewSingleJourney" />
+        <activity android:name=".ViewJourneys" />
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <provider
+            android:name=".JourneyProvider"
+            android:authorities="com.example.runningtrackerapp.JourneyProvider"
+            android:exported="true" />
+
+        <activity android:name=".RecordJourney" />
+
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"/>
