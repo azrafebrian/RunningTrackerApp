@@ -38,7 +38,7 @@ public class MainMenuActivity extends AppCompatActivity {
                             selectedFragment = new MainActivity();
                             break;
                         case R.id.nav_article:
-                            selectedFragment = new DummyFragmentArticleKesehatan();
+                            selectedFragment = new TipsKesehatan();
                             break;
                         case R.id.nav_setting:
                             selectedFragment = new FragmentPengaturan();
