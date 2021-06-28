@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/button_mulai"
-            android:background="@drawable/button_mulai">
+            android:background="@drawable/button_history">
         </ImageButton>
         <TextView
             android:id="@+id/mulai_sejarah"
@@ -79,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/button_history"
-            android:background="@drawable/button_mulai">
+            android:background="@drawable/button_stats">
         </ImageButton>
         <TextView
             android:id="@+id/mulai_statistik"
