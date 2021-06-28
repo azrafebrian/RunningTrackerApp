@@ -16,7 +16,7 @@
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Statistics"
+            android:text="@string/mulai_statistik"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="@color/satu"
             android:gravity="center"/>
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="25dp"
             android:gravity="center"
-            android:text="Select Date"
+            android:text="@string/select_date"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -92,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Time Running Today:"
+                android:text="@string/time_running_today"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 android:textSize="18sp"
@@ -107,7 +107,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
-                android:text="All Time Distance Ran:"
+                android:text="@string/all_time_distance_ran"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 android:textSize="18sp"
@@ -120,7 +120,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Distance Today:"
+                android:text="@string/distance_today"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 android:textSize="18sp"
@@ -134,7 +134,7 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="16dp"
-                android:text="Record Distance in 1 Journey:"
+                android:text="@string/record_distance_in_1_journey"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 android:textSize="18sp"
@@ -150,7 +150,7 @@
             android:layout_marginTop="25dp"
             android:layout_marginBottom="15dp"
             android:gravity="center"
-            android:text="This Week"
+            android:text="@string/this_week"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <com.github.mikephil.charting.charts.BarChart

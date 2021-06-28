@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Duration:"
+                android:text="@string/duration"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 app:layout_constraintStart_toStartOf="parent"
@@ -114,7 +114,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Average speed:"
+                android:text="@string/average_speed"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +126,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="25dp"
-                android:text="Distance run:"
+                android:text="@string/distance_run"
                 android:textAppearance="@style/TextAppearance.AppCompat.Headline"
                 android:textColor="@color/dua"
                 app:layout_constraintStart_toStartOf="parent"
@@ -147,7 +147,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClickPlay"
-                android:text="START" />
+                android:text="@string/mulai" />
 
             <Button
                 android:id="@+id/stopButton"
@@ -155,7 +155,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onClickStop"
-                android:text="STOP" />
+                android:text="@string/stop" />
         </LinearLayout>
 
         <View style="@style/Divider"/>

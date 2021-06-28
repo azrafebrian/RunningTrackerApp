@@ -7,7 +7,7 @@
     </style>
 
     <style name="FlatButton" parent="Theme.AppCompat.Light">
-        <item name="android:textColor">@android:color/holo_orange_dark</item>
-        <item name="colorControlHighlight">@android:color/holo_green_dark</item>
+        <item name="android:textColor">@color/tiga</item>
+        <item name="colorControlHighlight">@color/satu</item>
     </style>
 </resources>

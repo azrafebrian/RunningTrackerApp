@@ -11,8 +11,10 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Edit Journey Details"
+        android:text="@string/edit_journey_details"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/satu"
+        android:layout_marginTop="50dp"
         android:gravity="center"/>
 
     <TextView
@@ -21,14 +23,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Rename Title" />
+        android:text="@string/rename_title" />
 
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Recorded Journey"
+        android:hint="@string/recorded_journey"
         android:inputType="textPersonName" />
 
     <TextView
@@ -37,14 +39,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Add a Comment" />
+        android:text="@string/add_a_comment" />
 
     <EditText
         android:id="@+id/commentEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="What an amazing journey!"
+        android:hint="@string/what_an_amazing_journey"
         android:inputType="textPersonName" />
 
     <TextView
@@ -53,7 +55,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        android:text="Change Rating (must be between 1-5)" />
+        android:text="@string/change_rating_must_be_between_1_5" />
 
     <EditText
         android:id="@+id/ratingEditText"
@@ -74,7 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickChangeImage"
-        android:text="Change Image" />
+        android:text="@string/change_image" />
 
     <Button
         android:id="@+id/button5"
@@ -84,7 +86,8 @@
         android:layout_margin="12dp"
         android:onClick="onClickSave"
         android:padding="8dp"
-        android:text="SAVE JOURNEY"
+        android:textColor="@color/tiga"
+        android:text="@string/save_journey"
         android:theme="@style/FlatButton" />
 
 </LinearLayout>
