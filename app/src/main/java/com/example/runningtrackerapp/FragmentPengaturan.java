@@ -2,6 +2,7 @@ package com.example.runningtrackerapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,12 +26,21 @@ public class FragmentPengaturan extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         Button button = view.findViewById(R.id.logout);
+        Button language = view.findViewById(R.id.action_language);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(requireActivity().getApplicationContext(), LoginActivity.class));
                 getActivity().finish();
+            }
+        });
+
+        language.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent langIntent=new Intent(Settings.ACTION_LOCALE_SETTINGS);
+                startActivity(langIntent);
             }
         });
     }
@@ -40,4 +50,5 @@ public class FragmentPengaturan extends Fragment {
         startActivity(new Intent(requireActivity().getApplicationContext(), LoginActivity.class));
         getActivity().finish();
     }
+
 }
