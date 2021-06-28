@@ -15,6 +15,7 @@ import android.os.Handler;
 import android.os.IBinder;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -32,6 +33,7 @@ public class RecordJourney extends AppCompatActivity {
 
     private Button playButton;
     private Button stopButton;
+    private Button btnmenu;
     private static final int PERMISSION_GPS_CODE = 1;
 
     // will poll the location service for distance and duration
@@ -129,6 +131,7 @@ public class RecordJourney extends AppCompatActivity {
 
         playButton = findViewById(R.id.startButton);
         stopButton = findViewById(R.id.stopButton);
+        btnmenu     = findViewById(R.id.btn_menu);
 
         // connect to service to see if currently tracking before enabling a button
         stopButton.setEnabled(false);
@@ -150,6 +153,14 @@ public class RecordJourney extends AppCompatActivity {
         startService(new Intent(this, com.example.runningtrackerapp.LocationService.class));
         bindService(
                 new Intent(this, com.example.runningtrackerapp.LocationService.class), lsc, Context.BIND_AUTO_CREATE);
+
+        btnmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(RecordJourney.this,MainMenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void onClickPlay(View view) {

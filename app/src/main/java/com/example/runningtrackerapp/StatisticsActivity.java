@@ -1,6 +1,7 @@
 package com.example.runningtrackerapp;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
 
@@ -32,6 +34,7 @@ public class StatisticsActivity extends AppCompatActivity {
     private TextView timeToday;
     private TextView distanceAllTime;
     private TextView dateText;
+    private Button btnmenu;
 
     private DatePickerDialog.OnDateSetListener dateListener;
 
@@ -50,10 +53,18 @@ public class StatisticsActivity extends AppCompatActivity {
         distanceAllTime = findViewById(R.id.Statistics_distanceAllTime);
         dateText        = findViewById(R.id.Statistics_selectDate);
         barChart        = findViewById(R.id.barchart);
+        btnmenu         = findViewById(R.id.btn_menu);
 
         setUpDateDialogue();
 
 
+        btnmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(StatisticsActivity.this,MainMenuActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setUpDateDialogue() {

@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -33,6 +34,7 @@ public class ViewJourneys extends ListActivity {
     private ListView journeyList;
     private JourneyAdapter adapter;
     private ArrayList<JourneyItem> journeyNames;
+    private Button btnmenu;
 
     /* Class to store all the information needed to display journey row item */
     private class JourneyItem {
@@ -116,6 +118,7 @@ public class ViewJourneys extends ListActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_journeys);
 
+        btnmenu      = findViewById(R.id.btn_menu);
         journeyNames = new ArrayList<JourneyItem>();
         adapter = new JourneyAdapter(this, R.layout.journeylist, journeyNames);
         setListAdapter(adapter);
@@ -134,6 +137,14 @@ public class ViewJourneys extends ListActivity {
                 Intent singleJourney = new Intent(ViewJourneys.this, ViewSingleJourney.class);
                 singleJourney.putExtras(b);
                 startActivity(singleJourney);
+            }
+        });
+
+        btnmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(ViewJourneys.this,MainMenuActivity.class);
+                startActivity(intent);
             }
         });
     }
